@@ -1,0 +1,57 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+    <style>
+        
+        h1 {text-align: center;}
+        .container {
+            background: rgb(131, 210, 218);
+            border: 10px solid rgb(232, 254, 250);
+            font-size: 20px;
+            margin-right: 530px; 
+            margin-top: 50px;
+            padding: 50px;
+            width: 300px;
+            height: 360px;
+            }
+    </style>
+   
+</head>
+<body style="background-image: url('https://img.freepik.com/premium-vector/abstract-innovation-technology-background_39608-139.jpg?w=740'); background-repeat: no-repeat; background-size: 1400px 800px; background-position: center;">
+    <h1>PASSWORD GENERATOR </h1>
+<div class="container text-center">
+
+<br>
+<form action="password">
+    <select name="length">
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12" selected="selected">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+    </select> length
+    <br>
+    
+    <input type="checkbox" name="Uppercase">Uppercase
+    <br>
+    
+    <input type="checkbox" name="Number">Number
+    <br>
+    
+    <input type="checkbox" name="Special Character">Special Character
+    <br>
+    <br>
+
+    <input type="submit" value="Generate Password" class="btn btn-primary">
+</form>
+
+<br>
+<br>
+
+
+<a href="{% url 'about' %}">About Page</a>
+
+</div>
+</body>
